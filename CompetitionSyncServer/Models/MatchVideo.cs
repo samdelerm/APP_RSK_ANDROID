@@ -8,4 +8,5 @@ public sealed class MatchVideo
     public string MatchName { get; set; } = string.Empty;
     public string VideoUrl { get; set; } = string.Empty;
     public DateTime PublishedAtUtc { get; set; } = DateTime.UtcNow;
+    public List<VideoComment> Comments { get; set; } = new();
 }

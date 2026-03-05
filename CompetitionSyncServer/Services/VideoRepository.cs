@@ -81,6 +81,29 @@ public sealed class VideoRepository
         }
     }
 
+    public async Task AddCommentAsync(Guid videoId, VideoComment comment, CancellationToken cancellationToken = default)
+    {
+        await _lock.WaitAsync(cancellationToken);
+
+        try
+        {
+            var videos = await ReadInternalAsync(cancellationToken);
+            var video = videos.FirstOrDefault(v => v.Id == videoId);
+            if (video is null)
+            {
+                throw new InvalidOperationException("Video not found.");
+            }
+
+            video.Comments ??= new List<VideoComment>();
+            video.Comments.Add(comment);
+            await SaveInternalAsync(videos, cancellationToken);
+        }
+        finally
+        {
+            _lock.Release();
+        }
+    }
+
     private async Task<List<MatchVideo>> ReadInternalAsync(CancellationToken cancellationToken)
     {
         if (!File.Exists(_storagePath))

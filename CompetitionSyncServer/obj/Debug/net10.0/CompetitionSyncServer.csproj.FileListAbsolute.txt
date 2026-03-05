@@ -1,7 +1,6 @@
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\appsettings.json
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\CompetitionSyncServer.staticwebassets.endpoints.json
-C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\CompetitionSyncServer.exe
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\CompetitionSyncServer.deps.json
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\CompetitionSyncServer.runtimeconfig.json
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\CompetitionSyncServer.dll
