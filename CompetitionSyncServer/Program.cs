@@ -3,6 +3,12 @@ using CompetitionSyncServer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var renderPort = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrWhiteSpace(renderPort))
+{
+    builder.WebHost.UseUrls($"http://*:{renderPort}");
+}
+
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton(_ => new HttpClient());
 builder.Services.AddSingleton<CompetitionCatalogService>();

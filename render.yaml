@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: competition-sync-server
+    env: docker
+    rootDir: CompetitionSyncServer
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /api/health
+    plan: free
