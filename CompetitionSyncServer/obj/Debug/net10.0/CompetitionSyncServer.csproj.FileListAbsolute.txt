@@ -30,3 +30,4 @@ C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\obj\Deb
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\obj\Debug\net10.0\CompetitionSyncServer.pdb
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\obj\Debug\net10.0\CompetitionSyncServer.genruntimeconfig.cache
 C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\obj\Debug\net10.0\ref\CompetitionSyncServer.dll
+C:\Users\samue\OneDrive\Bureau\Nouveau dossier (3)\CompetitionSyncServer\bin\Debug\net10.0\CompetitionSyncServer.exe
