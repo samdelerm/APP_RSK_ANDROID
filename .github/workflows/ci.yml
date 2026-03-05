@@ -1,0 +1,35 @@
+name: build-and-publish
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore CompetitionSyncServer/CompetitionSyncServer.csproj
+
+      - name: Build
+        run: dotnet build CompetitionSyncServer/CompetitionSyncServer.csproj --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish CompetitionSyncServer/CompetitionSyncServer.csproj --configuration Release --output ./publish
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CompetitionSyncServer-publish
+          path: ./publish
